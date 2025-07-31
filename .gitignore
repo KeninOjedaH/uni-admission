@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.joblib
+
+# Entornos virtuales
+venv/
+.env/
+.envrc
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Archivos de sistema
+Thumbs.db
+.vscode/
+.idea/
+
+# Datos locales
+data/raw/
+data/processed/

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Kenin%20Ojeda/Documents/uni-admission/mlruns/0/35c824179d484c168b0fb90a7f790f0c/artifacts
+end_time: 1753999176800
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 35c824179d484c168b0fb90a7f790f0c
+run_name: DecisionTreeModel
+run_uuid: 35c824179d484c168b0fb90a7f790f0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753999164353
+status: 3
+tags: []
+user_id: Kenin Ojeda

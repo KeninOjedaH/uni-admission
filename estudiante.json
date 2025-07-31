@@ -1,0 +1,18 @@
+{
+  "COLEGIO": "COLEGIO TEST",
+  "COLEGIO_DIST": "CUSCO",
+  "COLEGIO_PROV": "CUSCO",
+  "COLEGIO_DEPA": "CUSCO",
+  "COLEGIO_ANIO_EGRESO": 2021,
+  "DOMICILIO_DEPA": "CUSCO",
+  "ESPECIALIDAD": "INGENIERIA DE PETROLEO Y GAS NATURAL",
+  "MODALIDAD": "EXTRAORDINARIO INGRESO DIRECTO CEPRE-UNI",
+  "SEXO": "FEMENINO",
+  "ANIO_POSTULA": 2024,
+  "ANIO_NACIMIENTO": 2005,
+  "h_e_Matemática": 11.5,
+  "h_e_fisica_quimica": 11.2,
+  "h_e_Aptitud": 12.5,
+  "h_total_semana": 30,
+  "calificacion": 12.8
+}
