@@ -14,7 +14,6 @@ def mapear_categorias_desconocidas(df: pd.DataFrame, categorias_validas: Dict[st
 class AdmissionPredictor(AdmissionPredictionInputPort):
     def __init__(self):
         self.model = joblib.load(MODEL_OUT)
-        self.threshold = 0.485
 
         df = pd.read_csv(DATA_PATH)
         self.columnas_modelo = df.drop(columns="INGRESO").columns.tolist()
@@ -36,25 +35,15 @@ class AdmissionPredictor(AdmissionPredictionInputPort):
         else:
             raise ValueError("El input debe ser un diccionario o un DataFrame")
 
-        # Asegurar que todas las columnas del modelo existan
         for col in self.columnas_modelo:
             if col not in df.columns:
                 df[col] = 0
 
-        # Reemplazar valores no vistos por 'OTROS'
         df = mapear_categorias_desconocidas(df, self.categorias_validas)
-
-        # Asegurar orden de columnas
         df = df[self.columnas_modelo]
 
-        # Predicción
-        prob = self.model.predict_proba(df)[:, 1][0]
-        pred_bin = int(prob >= self.threshold)
-        texto_prediccion = "Sí" if pred_bin == 1 else "No"
-
-        return {
-            "prediccion": texto_prediccion
-        }
+        pred = self.model.predict(df)[0]
+        return {"prediccion": "Sí" if pred == 1 else "No"}
 
     def obtener_opciones(self) -> Dict[str, list]:
         df = pd.read_csv(DATA_PATH)
