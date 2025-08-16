@@ -120,7 +120,7 @@ Visita: [http://localhost:8000/docs](http://localhost:8000/docs) para interactua
 
 ## 💡 Autor
 
-GRUPO 1 UNMSM
+Kenin Ojeda 
 
 ## 📄 Licencia
 
