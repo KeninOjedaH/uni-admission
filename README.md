@@ -121,7 +121,3 @@ Visita: [http://localhost:8000/docs](http://localhost:8000/docs) para interactua
 ## 💡 Autor
 
 Kenin Ojeda 
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
